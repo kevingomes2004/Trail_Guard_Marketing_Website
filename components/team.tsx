@@ -1,12 +1,12 @@
 import Image from "next/image"
 
 const teamMembers = [
-  { name: "Alex Johnson", role: "Founder & CEO", image: "/placeholder.svg?height=400&width=400" },
-  { name: "Sarah Lee", role: "Lead Developer", image: "/placeholder.svg?height=400&width=400" },
-  { name: "Mike Chen", role: "UX Designer", image: "/placeholder.svg?height=400&width=400" },
-  { name: "Emily Davis", role: "Marketing Director", image: "/placeholder.svg?height=400&width=400" },
-  { name: "Chris Taylor", role: "Outdoor Expert", image: "/placeholder.svg?height=400&width=400" },
-  { name: "Lisa Wong", role: "Customer Support Lead", image: "/placeholder.svg?height=400&width=400" },
+  { name: "Kevin Gomes", role: "Frontend Developer", image: "/Profile_pic.png?height=400&width=400" },
+  { name: "Thisula", role: "Project Leader", image: "/placeholder.svg?height=400&width=400" },
+  { name: "Dinuka", role: "UX Designer", image: "/placeholder.svg?height=400&width=400" },
+  { name: "Akindu", role: "Marketing Director", image: "/placeholder.svg?height=400&width=400" },
+  { name: "Jithnuka", role: "Outdoor Expert", image: "/placeholder.svg?height=400&width=400" },
+  { name: "Lakshitha", role: "Customer Support Lead", image: "/placeholder.svg?height=400&width=400" },
 ]
 
 export function Team() {
@@ -20,8 +20,8 @@ export function Team() {
               <Image
                 src={member.image || "/placeholder.svg"}
                 alt={member.name}
-                width={400}
-                height={400}
+                width={500}
+                height={500}
                 className="w-full h-64 object-cover"
               />
               <div className="p-6">
