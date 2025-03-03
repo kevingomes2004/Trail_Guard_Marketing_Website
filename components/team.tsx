@@ -2,9 +2,9 @@ import Image from "next/image"
 
 const teamMembers = [
   { name: "Kevin Gomes", role: "Frontend Developer", image: "/Profile_pic.png" },
-  { name: "Thisula Mahahaththa", role: "Project Leader", image: "/Thisula Portrait .jpg" },
+  { name: "Thisula Mahahuththa", role: "Project Leader", image: "/Thisula Portrait .jpg" },
   { name: "Dinuka Nimesh", role: "Frontend Developer", image: "/Dinuka_pic.png" },
-  { name: "Akindu", role: "Backend Developer", image: "/placeholder.svg" },
+  { name: "Akindu Bandara", role: "Backend Developer", image: "/Akindu_pic.jpg" },
   { name: "Jithnuka Athurugiriya", role: "Frontend Developer", image: "/Jithnuka_pic.png" },
   { name: "Lakshitha Vithanaarachchi", role: "Backend Developer", image: "/Lakshitha_pic.png" },
 ]
