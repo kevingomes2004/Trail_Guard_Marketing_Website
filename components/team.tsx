@@ -1,12 +1,12 @@
 import Image from "next/image"
 
 const teamMembers = [
-  { name: "Kevin Gomes", role: "Frontend Developer", image: "/Profile_pic.png?height=400&width=400" },
-  { name: "Thisula", role: "Project Leader", image: "/placeholder.svg?height=400&width=400" },
-  { name: "Dinuka", role: "UX Designer", image: "/placeholder.svg?height=400&width=400" },
-  { name: "Akindu", role: "Marketing Director", image: "/placeholder.svg?height=400&width=400" },
-  { name: "Jithnuka", role: "Outdoor Expert", image: "/placeholder.svg?height=400&width=400" },
-  { name: "Lakshitha", role: "Customer Support Lead", image: "/placeholder.svg?height=400&width=400" },
+  { name: "Kevin Gomes", role: "Frontend Developer", image: "/Profile_pic.png" },
+  { name: "Thisula", role: "Project Leader", image: "/placeholder.svg" },
+  { name: "Dinuka", role: "UX Designer", image: "/placeholder.svg" },
+  { name: "Akindu", role: "Marketing Director", image: "/placeholder.svg" },
+  { name: "Jithnuka", role: "Outdoor Expert", image: "/placeholder.svg" },
+  { name: "Lakshitha", role: "Customer Support Lead", image: "/placeholder.svg" },
 ]
 
 export function Team() {
@@ -17,13 +17,15 @@ export function Team() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {teamMembers.map((member) => (
             <div key={member.name} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <Image
-                src={member.image || "/placeholder.svg"}
-                alt={member.name}
-                width={500}
-                height={500}
-                className="w-full h-64 object-cover"
-              />
+              <div className="aspect-square relative">
+                <Image
+                  src={member.image || "/placeholder.svg"}
+                  alt={member.name}
+                  fill
+                  className="object-contain"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
+              </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
                 <p className="text-gray-600">{member.role}</p>
