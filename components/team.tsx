@@ -1,7 +1,7 @@
 import Image from "next/image"
 
 const teamMembers = [
-  { name: "Kevin Gomes", role: "Business Analyst, UI/UX Designer & Frontend Developer", image: "/Profile_pic.png" },
+  { name: "Kevin Gomes", role: "Business Analyst, UI/UX & Frontend Developer", image: "/Profile_pic.png" },
   { name: "Thisula Mahawaththa", role: " QA engineer/ Project Manager", image: "/Thisula Portrait .jpg" },
   { name: "Dinuka Nimesh", role: "Frontend developer/ UI/UX Designer ", image: "/Dinuka_pic.png" },
   { name: "Akindu Bandara", role: "AI Specialist/Backend developer", image: "/Akindu_pic.jpg" },
