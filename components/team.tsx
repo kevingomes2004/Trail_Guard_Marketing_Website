@@ -1,11 +1,11 @@
 import Image from "next/image"
 
 const teamMembers = [
-  { name: "Kevin Gomes", role: "UI/ UX Designer/ Frontend developer", image: "/Profile_pic.png" },
-  { name: "Thisula Mahahuththa", role: "Backend Developer/ Project Manager", image: "/Thisula Portrait .jpg" },
-  { name: "Dinuka Nimesh", role: "Frontend developer/ QA engineer", image: "/Dinuka_pic.png" },
+  { name: "Kevin Gomes", role: "Business Analyst/ Frontend developer", image: "/Profile_pic.png" },
+  { name: "Thisula Mahahuththa", role: " QA engineer/ Project Manager", image: "/Thisula Portrait .jpg" },
+  { name: "Dinuka Nimesh", role: "Frontend developer/ UI/ UX Designer ", image: "/Dinuka_pic.png" },
   { name: "Akindu Bandara", role: "AI Specialist/Backend developer", image: "/Akindu_pic.jpg" },
-  { name: "Jithnuka Athurugiriya", role: "Frontend Developer", image: "/Jithnuka_pic.png" },
+  { name: "Jithnuka Athurugiriya", role: "Frontend Developer/Software Architect", image: "/Jithnuka_pic.png" },
   { name: "Lakshitha Vithanaarachchi", role: "Backend developer/ DevOps engineer", image: "/Lakshitha_pic.png" },
 ]
 
