@@ -25,7 +25,7 @@ const teamMembers = [
     name: "Akindu Bandara",
     role: "AI Specialist/Backend developer",
     image: "/Akindu_pic.jpg",
-    linkedin: "https://www.linkedin.com/in/akindu-bandara",
+    linkedin: "https://www.linkedin.com/in/akindu-bandara-680001308/",
   },
   {
     name: "Jithnuka Athurugiriya",
