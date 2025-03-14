@@ -1,12 +1,44 @@
 import Image from "next/image"
+import { Linkedin } from "lucide-react"
+import Link from "next/link"
 
 const teamMembers = [
-  { name: "Kevin Gomes", role: "Business Analyst, UI/UX & Frontend Developer", image: "/Profile_pic.png" },
-  { name: "Thisula Mahawaththa", role: " QA engineer/ Project Manager", image: "/Thisula Portrait .jpg" },
-  { name: "Dinuka Nimesh", role: "Frontend developer/ UI/UX Designer ", image: "/Dinuka_pic.png" },
-  { name: "Akindu Bandara", role: "AI Specialist/Backend developer", image: "/Akindu_pic.jpg" },
-  { name: "Jithnuka Athurugiriya", role: "Frontend Developer/Software Architect", image: "/Jithnuka_pic.png" },
-  { name: "Lakshitha Vithanaarachchi", role: "Backend developer/ DevOps engineer", image: "/Lakshitha_pic.png" },
+  {
+    name: "Kevin Gomes",
+    role: "Business Analyst, UI/UX & Frontend Developer",
+    image: "/Profile_pic.png",
+    linkedin: "https://www.linkedin.com/in/kevin-gomes4/",
+  },
+  {
+    name: "Thisula Mahawaththa",
+    role: "QA engineer/ Project Manager",
+    image: "/Thisula Portrait .jpg",
+    linkedin: "https://www.linkedin.com/in/thisula-mahawatta-6208b4186/",
+  },
+  {
+    name: "Dinuka Nimesh",
+    role: "Frontend developer/ UI/UX Designer ",
+    image: "/Dinuka_pic.png",
+    linkedin: "https://www.linkedin.com/in/dinuka-nimesh-699098333/",
+  },
+  {
+    name: "Akindu Bandara",
+    role: "AI Specialist/Backend developer",
+    image: "/Akindu_pic.jpg",
+    linkedin: "https://www.linkedin.com/in/akindu-bandara",
+  },
+  {
+    name: "Jithnuka Athurugiriya",
+    role: "Frontend Developer/Software Architect",
+    image: "/Jithnuka_pic.png",
+    linkedin: "https://www.linkedin.com/in/jithnuka-athurugiriya-81a3981b4/",
+  },
+  {
+    name: "Lakshitha Vithanaarachchi",
+    role: "Backend developer/ DevOps engineer",
+    image: "/Lakshitha_pic.png",
+    linkedin: "https://www.linkedin.com/in/lakshitha-vithanaarachchi-791030301/",
+  },
 ]
 
 export function Team() {
@@ -28,7 +60,16 @@ export function Team() {
               </div>
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-2">{member.name}</h3>
-                <p className="text-gray-600">{member.role}</p>
+                <p className="text-gray-600 mb-4">{member.role}</p>
+                <Link
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center text-blue-600 hover:text-blue-800"
+                >
+                  <Linkedin className="w-5 h-5 mr-2" />
+                  LinkedIn Profile
+                </Link>
               </div>
             </div>
           ))}
